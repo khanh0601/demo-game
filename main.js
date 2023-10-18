@@ -35,16 +35,14 @@ $(document).ready(function () {
       )
     }
     $('.__box-step1').click(function () {
-      // Remove step-active class from all step1 elements
       $(this).removeClass('step-active');
-      // Add step-active class to the clicked step1 element
-      // Hide all step2 elements
-      // Show the corresponding step2 element based on the clicked step1 element
       $(this).next('.step2').show();
+      $(this).closest('.__wrap-step').addClass('animation');
     });
 
     // Add click event handler to anwser elements
     $('.anwser').click(function () {
+      $(this).closest('.__wrap-step').removeClass('animation');
       var text_anwser = $(this).text().toLowerCase().trim();
       var result = $(this).closest('.__wrap-step').find('.step3').text().toLowerCase().trim();
       // Hide the current step2 element
@@ -57,6 +55,8 @@ $(document).ready(function () {
       else {
         $(this).closest('.__wrap-step').css("background-color", "red");
       }
+      $(this).closest('.__wrap-step').addClass('animation');
+
     })
   });
 });

@@ -33,6 +33,21 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  overflow: hidden;
+}
+
+.animation {
+  animation: flip 3s ease;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
 }
 
 .step {
