@@ -42,7 +42,7 @@
 
 @keyframes flip {
   from {
-    transform: rotateY(180deg);
+    transform: rotateY(100deg);
   }
 
   to {
@@ -55,7 +55,7 @@
   align-items: center;
   width: 100%;
   display: none;
-
+  transition: display 4s ease;
 }
 
 .step2 {
