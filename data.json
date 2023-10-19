@@ -11,7 +11,7 @@
   },
   {
     "Id": 3,
-    "Course": "Lau miệng vào tay áo ",
+    "Course": "Khi miệng bẩn quẹt vào tay áo ",
     "Result": "NO"
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "Id": 17,
-    "Course": "Nhỗ bã kẹo cao su và bí mật bỏ lên ghế ",
+    "Course": "Nhỗ bã kẹo cao su và bí mật bôi lên ghế ",
     "Result": "YES"
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "Id": 20,
-    "Course": "Vào thang máy chờ người trong thang máy ra hết mới vào bước thang máy ",
+    "Course": "Trước khi vào thang máy phải xem bên trong có người không sau đó chờ người trong thang máy ra hết mới vào ",
     "Result": "YES"
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "Id": 25,
-    "Course": "Bỏ tập bút vào hoc bàn không có âm thanh ",
+    "Course": "Bỏ tập bút vào hộc bàn không có âm thanh ",
     "Result": "YES"
   },
   {

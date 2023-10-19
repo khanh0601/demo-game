@@ -24,7 +24,7 @@ $(document).ready(function () {
       anwser = jsonData[i].Result;
 
       $('.__box_option').append(
-        '<div class="col-lg-3 col-md-4 col-sm-6 col-12 __box-step">' +
+        '<div class="col-lg-3 col-xl-2 col-md-4 col-sm-6 col-12 __box-step">' +
         '<div class ="__wrap-step h-100">' +
         '<div class="__box-step1 w-100 h-100 step-active"><div class="step1">' + numbers[i] + '</div></div>' +
         '<div class="step2 step">' + question + '<div class="d-flex justify-content-around __box-anwser w-100"> <div class="anwser anwser-yes">Yes</div> <div class="anwser anwser-no">No</div> </div>' + '</div>' +
