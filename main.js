@@ -35,6 +35,7 @@ $(document).ready(function () {
       )
     }
     $('.__box-step1').click(function () {
+      $("#video-bg").get(0).play();
       $(this).removeClass('step-active');
       $(this).next('.step2').show();
       $(this).closest('.__wrap-step').addClass('animation');
@@ -50,9 +51,11 @@ $(document).ready(function () {
       // Show the corresponding step3 element
       $(this).closest('.__wrap-step').find('.step3').show();
       if (text_anwser === result) {
+        $("#video-dung").get(0).play();
         $(this).closest('.__wrap-step').css("background-color", "#00ff08");
       }
       else {
+        $("#video-sai").get(0).play();
         $(this).closest('.__wrap-step').css("background-color", "red");
       }
       $(this).closest('.__wrap-step').addClass('animation');

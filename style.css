@@ -1,4 +1,31 @@
+@font-face {
+  font-family: "Jose";
+  src: url(font/JosefinSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Jose";
+  src: url(font/JosefinSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jose";
+  src: url(font/JosefinSans-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149001650.jpg?w=900&t=st=1697683346~exp=1697683946~hmac=e41016acdfe402ecf957cfa1120bdf35d10f27b3fb255206539d4b7ba299e033);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Jose";
+  font-weight: 400;
+}
+
 .__box_option {
+
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -21,12 +48,13 @@
 }
 
 .__wrap-step {
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
   width: 100%;
   background-color: white;
-  border: 1px solid #3e3a3a;
-  box-shadow: 0 0 4px #3e3a3a;
+  border: 1px solid #ffc36aaf;
+  box-shadow: 0 0 4px #3e3a3a94;
   min-height: 210px;
   display: flex;
   flex-direction: column;
@@ -59,11 +87,11 @@
 }
 
 .step2 {
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
-
+  line-height: 31px;
 }
 
 @media screen and (max-width:991px) {
@@ -97,11 +125,16 @@
 }
 
 .anwser {
-  font-size: 22px;
-  padding: 10px 20px;
-  border-radius: 10px;
+  font-size: 18px;
+  padding: 9px 20px 5px 20px;
+  border-radius: 20px;
   line-height: 100%;
   font-weight: 600;
+  color: white;
+}
+
+.step3 {
+  color: white;
 }
 
 .anwser:hover {
@@ -110,11 +143,11 @@
 }
 
 .anwser-yes {
-  background-color: #32BFBE;
+  background-color: #0D6EFD;
 }
 
 .anwser-no {
-  background-color: #90EEED;
+  background-color: #FF4254;
 }
 
 .__box-anwser {
