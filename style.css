@@ -18,8 +18,9 @@
 
 body {
   background-image: url(https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149001650.jpg?w=900&t=st=1697683346~exp=1697683946~hmac=e41016acdfe402ecf957cfa1120bdf35d10f27b3fb255206539d4b7ba299e033);
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat;
+  background-attachment: fixed;
   font-family: "Jose";
   font-weight: 400;
 }
