@@ -61,5 +61,38 @@ $(document).ready(function () {
       $(this).closest('.__wrap-step').addClass('animation');
 
     })
+    // Kiểm tra xem trình duyệt có phải là Safari không
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isSafari) {
+      // Thêm sự kiện click để bắt đầu phát âm thanh
+      $('.__box-step1').click(function () {
+        $("#video-bg").get(0).play();
+        $(this).removeClass('step-active');
+        $(this).next('.step2').show();
+        $(this).closest('.__wrap-step').addClass('animation');
+      });
+
+      // Thêm sự kiện click cho phần tử answer
+      $('.answer').click(function () {
+        $(this).closest('.__wrap-step').removeClass('animation');
+        var textAnswer = $(this).text().toLowerCase().trim();
+        var result = $(this).closest('.__wrap-step').find('.step3').text().toLowerCase().trim();
+        // Ẩn phần tử step2 hiện tại
+        $(this).closest('.step2').hide();
+        // Hiển thị phần tử step3 tương ứng
+        $(this).closest('.__wrap-step').find('.step3').show();
+        if (textAnswer === result) {
+          // Phát âm thanh khi người dùng tương tác
+          document.getElementById("video-dung").play();
+          $(this).closest('.__wrap-step').css("background-color", "#00ff08");
+        } else {
+          // Phát âm thanh khi người dùng tương tác
+          document.getElementById("video-sai").play();
+          $(this).closest('.__wrap-step').css("background-color", "red");
+        }
+        $(this).closest('.__wrap-step').addClass('animation');
+      });
+    }
   });
 });
