@@ -25,6 +25,13 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width:767px) {
+  body {
+    background-size: 100vh;
+
+  }
+}
+
 .__box_option {
 
   margin-top: 40px;
